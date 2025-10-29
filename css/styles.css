@@ -1,0 +1,110 @@
+/* --- Global Styles --- */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #a0d8ef, #8fd3f4);
+  color: #003366;
+}
+
+a {
+  text-decoration: none;
+  color: #003366;
+}
+
+/* --- Navbar --- */
+nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+/* --- Hero Section --- */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  padding: 0 2em;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+header p {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+header .register-btn {
+  padding: 0.8em 1.5em;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header .register-btn:hover {
+  background-color: #002244;
+}
+
+/* --- Sections --- */
+section {
+  padding: 4em 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: rgba(255,255,255,0.9);
+  text-align: center;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: 0.3em 0;
+}
