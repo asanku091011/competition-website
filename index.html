@@ -4,24 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MSK MedQuest</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #a0d8ef, #8fd3f4);
-      color: #003366;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      flex-direction: column;
-    }
-    h1 { font-size: 3em; margin-bottom: 0.2em; }
-    p { font-size: 1.2em; }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Welcome to MSK MedQuest!</h1>
-  <p>Hosted by Medical Science Kids</p>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>MSK MedQuest</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Welcome to MSK MedQuest!</h1>
+    <p>Hosted by Medical Science Kids</p>
+    <button class="register-btn" onclick="window.location.href='contact.html'">Register Now</button>
+  </header>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Medical Science Kids. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
