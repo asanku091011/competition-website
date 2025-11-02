@@ -12,6 +12,14 @@ a {
   color: #003366;
 }
 
+a:link {
+  color: #003366;
+}
+
+a:visited {
+  color: #ac5ee0;
+}
+
 a:hover{
   font-weight: bold;
 }
@@ -59,6 +67,14 @@ nav li {
 
 nav li a{
   text-decoration: none;
+}
+
+nav li a:link{
+  color: #003366;
+}
+
+nav li a:visited{
+  color: #003366;
 }
 
 nav li a:hover {

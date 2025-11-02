@@ -9,24 +9,28 @@
 <body>
 
   <!-- Navigation -->
-  <nav>
-    <div class="logo">
-        <img src="images/MedScienceKidsLogo.png" alt="MSK Logo">
-        <h2>MSK MedQuest</h2>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div id="navbar"></div>
 
   <!-- About Section -->
   <section>
     <h2>About the Competition</h2>
     <p>
-      MSK MedQuest is an exciting medical science competition for young innovators! Participants will explore real-world medical challenges, solve puzzles, and submit creative solutions to advance their knowledge in biology, chemistry, and healthcare technology.
+      MSK MedQuest is an exciting and educational medical science competition designed for young innovators
+      with a passion for understanding the human body. Participants will have the opportunity to either create
+      a hands-on project or take part in a rigorous medical knowledge test, showcasing their
+      curiosity, creativity, and analytical thinking. 
+    </p>
+    <p>
+      This year’s challenge invites competitors to dive deep
+      into the fascinating worlds of the digestive and cardiovascular systems, exploring how our bodies process
+      nutrients, circulate blood, and maintain vital functions that sustain life.
+      Through this experience, students will strengthen their understanding of anatomy and physiology while
+      applying scientific reasoning to real-world medical concepts.
+      Whether designing an innovative health-related project or demonstrating mastery through testing,
+      participants will gain valuable insight into the inner workings of the human body and the interconnected
+      systems that make it function. MSK MedQuest encourages every student to think like a future healthcare
+      leader: curious, compassionate, and committed to discovery.
+      
     </p>
     <p>
       Join us to test your skills, collaborate with peers, and be part of an inspiring community of future medical scientists!
@@ -36,6 +40,12 @@
   <footer>
     <p>&copy; 2025 Medical Science Kids. All Rights Reserved.</p>
   </footer>
-
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
 </body>
 </html>

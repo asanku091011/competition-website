@@ -9,18 +9,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav>
-    <div class="logo">
-        <img src="images/MedScienceKidsLogo.png" alt="MSK Logo">
-        <h2>MSK MedQuest</h2>
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div id="navbar"></div>
 
   <section>
     <h2>Contact & Registration</h2>
@@ -28,7 +17,7 @@
     <p>
       <div class="logo">
         Follow us on instagram for updates: 
-        <a href="https://www.instagram.com/medical_science_kids?igsh=MWc3YmZnY2Vtam43ZA%3D%3D&utm_source=qr">Instagram</a>
+        <a href="https://www.instagram.com/medical_science_kids?igsh=MWc3YmZnY2Vtam43ZA%3D%3D&utm_source=qr" target="_blank">Instagram</a>
         <img src = "images/InstaQRCode.png" alt="InstaQRCode" style: height = 50px>
       </div>
     </p>
@@ -37,6 +26,12 @@
   <footer>
     <p>&copy; 2025 Medical Science Kids. All Rights Reserved.</p>
   </footer>
-
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
 </body>
 </html>
