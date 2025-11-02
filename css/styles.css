@@ -8,8 +8,19 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #003366;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+img {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  margin: 0.5em;
 }
 
 /* --- Navbar --- */
@@ -44,6 +55,10 @@ nav ul {
 
 nav li {
   margin-left: 2em;
+}
+
+nav li a{
+  text-decoration: none;
 }
 
 nav li a:hover {
